@@ -1,9 +1,9 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import { Navbar, OutterWrapper, StyledButton } from './style';
-import { useTheme } from '@/context/ThemeProvider';
-import { Box } from '@/style';
-import Link from 'next/link';
+"use client";
+import React, { useEffect, useState } from "react";
+import { Navbar, OutterWrapper, StyledButton } from "./style";
+import { useTheme } from "@/context/ThemeProvider";
+import { Box } from "@/style";
+import Link from "next/link";
 import {
   CloseIcon,
   MenuIcon,
@@ -12,12 +12,12 @@ import {
   SunIcon,
   UserIcon,
   VerifiedIcon,
-} from '../Icons';
-import Divider from '../Divider';
-import { signOut, useSession } from 'next-auth/react';
-import Image from 'next/legacy/image';
-import { usePathname } from 'next/navigation';
-import SubHeader from '../SubHeader';
+} from "../Icons";
+import Divider from "../Divider";
+import { signOut, useSession } from "next-auth/react";
+import Image from "next/legacy/image";
+import { usePathname } from "next/navigation";
+import SubHeader from "../SubHeader";
 
 function Header() {
   const { data, status } = useSession();
@@ -27,11 +27,11 @@ function Header() {
   const [isLoading, setIsLoading] = useState(true);
 
   const links = [
-    { id: 1, label: 'Home', link: '/' },
-    { id: 2, label: 'About', link: '/about' },
-    { id: 3, label: 'Contact', link: '/contact' },
-    { id: 4, label: 'Categories', link: '/categories' },
-    { id: 5, label: 'Write', link: '/write', isAuth: true },
+    { id: 1, label: "Home", link: "/" },
+    { id: 2, label: "About", link: "/about" },
+    { id: 3, label: "Contact", link: "/contact" },
+    { id: 4, label: "Categories", link: "/categories" },
+    { id: 5, label: "Write", link: "/write", isAuth: true },
   ];
 
   const pathname = usePathname();
@@ -45,7 +45,7 @@ function Header() {
           setIsLoading(false);
         })
         .catch((error) => {
-          console.error('Error:', error);
+          console.error("Error:", error);
           setIsLoading(false);
         });
     }
@@ -64,7 +64,7 @@ function Header() {
             href="/"
             onClick={() => setIsOpen(false)}
           >
-            Informative
+            Khushlim
             <Divider />
           </Link>
           <button
@@ -81,20 +81,20 @@ function Header() {
           </button>
           <Box
             className={`collapse navbar-collapse links-menu ${
-              isOpen ? 'show' : ''
+              isOpen ? "show" : ""
             }`}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               {links.map((link) => (
                 <Box key={link.id}>
-                  {(link.isAuth && status === 'authenticated') ||
+                  {(link.isAuth && status === "authenticated") ||
                   !link.isAuth ? (
                     <li className="nav-item">
                       <Link
                         onClick={() => setIsOpen(false)}
                         className={`nav-link ${
-                          pathname === link.link && 'active'
+                          pathname === link.link && "active"
                         }`}
                         href={link.link}
                       >
@@ -111,7 +111,7 @@ function Header() {
                 <MoonIcon />
                 <SunIcon />
               </StyledButton>
-              {status === 'authenticated' ? (
+              {status === "authenticated" ? (
                 <Box className="nav-item dropdown position-relative mt-4 mt-md-0">
                   <a
                     className="nav-link dropdown-toggle"
@@ -125,7 +125,7 @@ function Header() {
                         <VerifiedIcon
                           width="16"
                           className="ms-1 position-absolute"
-                          style={{ right: '-2px', bottom: '-3px', zIndex: 9 }}
+                          style={{ right: "-2px", bottom: "-3px", zIndex: 9 }}
                         />
                       )}
                       {user?.image ? (
