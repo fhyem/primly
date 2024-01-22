@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://informative-eta.vercel.app"),
+  metadataBase: new URL("https://travelwithkhushlim.vercel.app/"),
   title: {
     default: "Travel with Khushlim",
     template: `%s - Travel - Your travel Guide`,
