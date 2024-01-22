@@ -1,16 +1,16 @@
-import { Box } from '@/style';
-import React from 'react';
-import Para from '../Para';
-import Heading from '../Heading';
-import Link from 'next/link';
-import Divider from '../Divider';
-import { FooterWrapper } from './style';
+import { Box } from "@/style";
+import React from "react";
+import Para from "../Para";
+import Heading from "../Heading";
+import Link from "next/link";
+import Divider from "../Divider";
+import { FooterWrapper } from "./style";
 import {
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
   TwitterIcon,
-} from 'next-share';
+} from "next-share";
 
 const Footer = () => {
   return (
