@@ -56,7 +56,7 @@ function Header() {
   };
 
   return (
-    <OutterWrapper className="sticky-top mb-1 mb-md-2">
+    <OutterWrapper className="sticky-top">
       <Box className="container position-relative">
         <Navbar className={`navbar navbar-expand-md`}>
           <Link
@@ -199,12 +199,12 @@ function Header() {
           </Box>
         </Navbar>
         <hr />
-        <SubHeader
+        {/* <SubHeader
           setIsOpen={setIsOpen}
           status={status}
           data={data}
           user={user}
-        />
+        /> */}
       </Box>
     </OutterWrapper>
   );

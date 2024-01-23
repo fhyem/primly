@@ -1,9 +1,12 @@
-import { themeStyles } from '@/theme';
-import styled from 'styled-components';
+import { themeStyles } from "@/theme";
+import styled from "styled-components";
 
 export const OutterWrapper = styled.div`
-  background-color: ${({ theme }) => theme.primary};
-  border-bottom: 1px solid ${({ theme }) => theme.border};
+  // background-color: ${({ theme }) => theme.primary};
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  // border-bottom: 1px solid ${({ theme }) => theme.border};
   .avatar {
     position: relative;
     height: 40px;
@@ -45,7 +48,7 @@ export const OutterWrapper = styled.div`
 
 export const Navbar = styled.nav`
   ${({ theme }) => themeStyles[theme]};
-  background-color: ${({ theme }) => theme.primary};
+  // background-color: ${({ theme }) => theme.primary};
   /* border-bottom: 1px solid ${({ theme }) => theme.border}; */
   & .dropdown-menu {
     right: 0 !important;
@@ -81,7 +84,7 @@ export const Navbar = styled.nav`
     position: relative;
     color: ${({ theme }) => theme.secondary};
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 10px;
@@ -125,6 +128,6 @@ export const StyledButton = styled.button`
     border-radius: 50px;
     /* top: 3px; */
     position: absolute;
-    right: ${({ pos }) => (pos === 'light' ? '2px' : '24px')};
+    right: ${({ pos }) => (pos === "light" ? "2px" : "24px")};
   }
 `;

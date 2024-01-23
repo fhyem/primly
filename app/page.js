@@ -1,6 +1,10 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import newZealand from "@/public/newzealand.jpg";
 
 export default function Home() {
-  return <div>{/* <h1>Welcome to Hero section!</h1> */}</div>;
+  return (
+    <div className="content-section">
+      <Image src={newZealand} alt="img" fill />
+    </div>
+  );
 }
