@@ -78,7 +78,7 @@ export const Navbar = styled.nav`
     font-weight: 500;
   }
   & .nav-link.active {
-    color: #ff2c54;
+    color: ${({ theme }) => theme.active};
   }
   & .navbar-brand {
     position: relative;

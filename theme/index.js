@@ -1,25 +1,27 @@
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
 const lightTheme = {
-  primary: '#fff',
-  secondary: '#1f1f1f',
-  border: '#e8ecf3',
-  gray: '#F0F2F5',
-  bg: '#F0F2F5',
-  lightGray: '#e7e7e7',
-  hr: '#b6b6b6',
-  link: '#3e3eff',
+  primary: "#242a2a",
+  secondary: "#cacaca",
+  border: "#e8ecf3",
+  gray: "#F0F2F5",
+  bg: "#F0F2F5",
+  lightGray: "#e7e7e7",
+  hr: "#b6b6b6",
+  link: "#3e3eff",
+  active: "#3bd9cc",
 };
 
 const darkTheme = {
-  primary: '#1f1f1f',
-  secondary: '#fff',
-  border: '#3434348a',
-  gray: '#3434348a',
-  lightGray: '#2f2f2f',
-  bg: '#3d3d3d',
-  hr: '#474747',
-  link: '#b5b5ff',
+  primary: "#fff",
+  secondary: "#cacaca",
+  border: "#3434348a",
+  gray: "#3434348a",
+  lightGray: "#2f2f2f",
+  bg: "#3d3d3d",
+  hr: "#474747",
+  link: "#b5b5ff",
+  active: "#ff2c54",
 };
 
 export const themes = {

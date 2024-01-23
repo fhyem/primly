@@ -198,7 +198,7 @@ function Header() {
             </Box>
           </Box>
         </Navbar>
-        <hr />
+        {/* <hr /> */}
         {/* <SubHeader
           setIsOpen={setIsOpen}
           status={status}
