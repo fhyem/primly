@@ -1,5 +1,6 @@
 import Image from "next/image";
 import newZealand from "@/public/northern-lights.jpg";
+import SimpleSlider from "@/components/Slider";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
           Unforgettable <br /> Adventures await. <br /> Book your Journey <br />{" "}
           Today.
         </h1>
+        <p>Discover Pakistan with Khushlim</p>
+        <SimpleSlider />
       </div>
     </div>
   );

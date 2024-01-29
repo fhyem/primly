@@ -106,11 +106,11 @@ function Header() {
               ))}
             </ul>
             <Box className="d-none d-md-flex align-items-center gap-2">
-              <StyledButton onClick={toggleTheme} pos={theme}>
+              {/* <StyledButton onClick={toggleTheme} pos={theme}>
                 <Box className="circle"></Box>
                 <MoonIcon />
                 <SunIcon />
-              </StyledButton>
+              </StyledButton> */}
               {status === "authenticated" ? (
                 <Box className="nav-item dropdown position-relative mt-4 mt-md-0">
                   <a

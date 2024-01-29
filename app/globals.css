@@ -40,6 +40,10 @@ a {
   color: #e0e0e0;
 }
 
+.slick-list {
+  position: absolute;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
