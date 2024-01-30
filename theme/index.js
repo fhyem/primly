@@ -24,6 +24,18 @@ const darkTheme = {
   active: "#ff2c54",
 };
 
+// const darktheme = {
+//   primary: "#fff",
+//   secondary: '#cacaca',
+//   border: '#343434',
+//   gray: '#2f2f2f',
+//   lightGray: '#ff2c54',
+//   active: '#b5b5ff',
+//   bg: '#474747',
+//   link: 'b6b6b6',
+//   hr: '#e7e7e7'
+// }
+
 export const themes = {
   light: lightTheme,
   dark: darkTheme,
