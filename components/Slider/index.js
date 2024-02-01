@@ -1,36 +1,59 @@
 "use client";
 
-import React from "react";
-import Slider from "react-slick";
+import { useState } from "react";
+import {
+  StyledContainer,
+  StyledCardHolder,
+  PrevCard,
+  CurrentCard,
+  NextCard,
+} from "./style.js";
+import Image from "next/image";
+import galaxy from "@/public/galaxy.jpg";
+import newZealand from "@/public/newzealand.jpg";
+import northern from "@/public/northern-lights.jpg";
 
-export default function SimpleSlider() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+const Slider = () => {
+  const [currentCard, setCurrentCard] = useState(0);
+
+  // Define your card data here
+  const cards = [
+    {
+      imageSrc: "https://source.unsplash.com/Z8dtTatMVMw",
+      name: "Highlands",
+      location: "Scotland",
+      description: "The mountains are calling",
+    },
+    {
+      imageSrc: "https://source.unsplash.com/9dmycbFE7mQ",
+      name: "Machu Pichu",
+      location: "Peru",
+      description: "Adventure is never far away",
+    },
+    {
+      imageSrc: "https://source.unsplash.com/m7K4KzL5aQ8",
+      name: "Chamonix",
+      location: "France",
+      description: "Let your dreams come true",
+    },
+  ];
+
   return (
-    <Slider {...settings}>
-      <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
+    <StyledContainer>
+      <h4>Slider Container</h4>
+      <StyledCardHolder>
+        <PrevCard>
+          <Image src={newZealand} alt="pic" />
+        </PrevCard>
+        <CurrentCard>
+          <Image src={galaxy} alt="pic" />
+        </CurrentCard>
+        <NextCard>
+          <Image src={newZealand} alt="pic" />
+        </NextCard>
+      </StyledCardHolder>
+    </StyledContainer>
   );
-}
+};
+
+export default Slider;

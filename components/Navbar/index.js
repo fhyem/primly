@@ -1,6 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Navbar, OutterWrapper, StyledButton } from "./style";
+import {
+  Navbar,
+  OutterWrapper,
+  StyledButton,
+  StyledNavbarWrapper,
+} from "./style";
 import { useTheme } from "@/context/ThemeProvider";
 import { Box } from "@/style";
 import Link from "next/link";
@@ -57,7 +62,7 @@ function Header() {
 
   return (
     <OutterWrapper className="sticky-top">
-      <Box className="container position-relative">
+      <StyledNavbarWrapper className="position-relative">
         <Navbar className={`navbar navbar-expand-md`}>
           <Link
             className="navbar-brand text-uppercase fw-medium"
@@ -205,7 +210,7 @@ function Header() {
           data={data}
           user={user}
         /> */}
-      </Box>
+      </StyledNavbarWrapper>
     </OutterWrapper>
   );
 }

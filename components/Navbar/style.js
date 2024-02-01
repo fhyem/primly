@@ -131,3 +131,8 @@ export const StyledButton = styled.button`
     right: ${({ pos }) => (pos === "light" ? "2px" : "24px")};
   }
 `;
+
+export const StyledNavbarWrapper = styled("div")`
+  margin-right: 30px;
+  margin-left: 30px;
+`;
