@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   StyledContainer,
   StyledCardHolder,
@@ -9,9 +9,9 @@ import {
   NextCard,
 } from "./style.js";
 import Image from "next/image";
-import galaxy from "@/public/galaxy.jpg";
-import newZealand from "@/public/newzealand.jpg";
-import northern from "@/public/northern-lights.jpg";
+import galaxy from "@/public/shishkat.jpg";
+import winter from "@/public/winter.jpg";
+import nature from "@/public/nature.jpg";
 
 const Slider = () => {
   const [currentCard, setCurrentCard] = useState(0);
@@ -39,20 +39,17 @@ const Slider = () => {
   ];
 
   return (
-    <StyledContainer>
-      <h4>Slider Container</h4>
-      <StyledCardHolder>
-        <PrevCard>
-          <Image src={newZealand} alt="pic" />
-        </PrevCard>
-        <CurrentCard>
-          <Image src={galaxy} alt="pic" />
-        </CurrentCard>
-        <NextCard>
-          <Image src={newZealand} alt="pic" />
-        </NextCard>
-      </StyledCardHolder>
-    </StyledContainer>
+    <React.Fragment>
+      <PrevCard>
+        <Image src={winter} alt="pic" />
+      </PrevCard>
+      <CurrentCard>
+        <Image src={galaxy} alt="pic" />
+      </CurrentCard>
+      <NextCard>
+        <Image src={nature} alt="pic" />
+      </NextCard>
+    </React.Fragment>
   );
 };
 

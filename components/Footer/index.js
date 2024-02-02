@@ -14,7 +14,7 @@ import {
 
 const Footer = () => {
   return (
-    <FooterWrapper className="container mt-5 pb-4">
+    <FooterWrapper className="mt-5 pb-4">
       <Box className="row gap-4">
         <Box className="col-md-3">
           <Link className="navbar-brand text-uppercase" href="/">

@@ -53,8 +53,6 @@ a {
 .right-content {
   position: relative;
   width: 50%;
-  display: flex;
-  justify-content: center;
 }
 .left-content {
   position: relative;

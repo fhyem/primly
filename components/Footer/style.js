@@ -1,6 +1,8 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const FooterWrapper = styled.div`
+  margin-left: 30px;
+  margin-right: 30px;
   & a.footer-link {
     text-decoration: none;
     color: ${({ theme }) => theme.secondary};
@@ -36,7 +38,7 @@ export const FooterWrapper = styled.div`
     font-weight: 600;
     font-size: 1.2rem;
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 10px;
