@@ -106,14 +106,37 @@ a {
   .left-content {
     width: unset;
   }
+  .right-content {
+    width: -webkit-fill-available;
+  }
   .content h1 {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .right-content {
+    position: relative;
+  }
+
+  .content {
+    margin-top: 60px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    color: #e0e0e0;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .content {
     flex-direction: column;
+    align-items: center;
+  }
+  .left-content {
+    width: -webkit-fill-available;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 1200px) {

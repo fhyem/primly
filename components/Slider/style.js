@@ -28,6 +28,10 @@ export const PrevCard = styled("div")`
     object-fit: cover;
     position: relative;
   }
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 export const CurrentCard = styled("div")`
   width: 250px;
@@ -41,6 +45,13 @@ export const CurrentCard = styled("div")`
     height: 100%;
     object-fit: cover;
     position: relative;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
   }
 `;
 export const NextCard = styled("div")`
@@ -56,5 +67,9 @@ export const NextCard = styled("div")`
     height: 100%;
     object-fit: cover;
     position: relative;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
   }
 `;

@@ -1,13 +1,13 @@
-import PostCard from '@/components/PostCard';
-import { Box } from '@/style';
-import React from 'react';
+import PostCard from "@/components/PostCard";
+import { Box } from "@/style";
+import React from "react";
 
 const HeroSection = async ({ posts }) => {
   return (
     <Box className="container">
       <Box
         className="row d-flex align-items-stretch row-gap-4"
-        style={{ minHeight: '60vh' }}
+        style={{ minHeight: "95vh" }}
       >
         <Box className="col-md-8">
           <PostCard
