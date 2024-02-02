@@ -26,7 +26,7 @@ a {
 }
 
 .content-section {
-  /* height: 100vh; */
+  height: 90vh;
   /* display: flex; */
   background-image: url("../public/northern-lights.jpg");
   background-repeat: no-repeat;
@@ -99,6 +99,27 @@ a {
   :root {
     --card-width: 250px;
     --card-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left-content {
+    width: unset;
+  }
+  .content h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .content h1 {
+    font-size: 40px;
+    color: #e0e0e0;
   }
 }
 
