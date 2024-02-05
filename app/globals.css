@@ -59,7 +59,7 @@ a {
   width: 50%;
 }
 
-/* .loading__wrapper {
+.loading__wrapper {
   position: fixed;
   left: 0;
   top: 0;
@@ -93,7 +93,7 @@ a {
       transform-origin: left;
     }
   }
-} */
+}
 
 @media only screen and (min-width: 800px) {
   :root {
