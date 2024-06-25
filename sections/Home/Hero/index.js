@@ -51,6 +51,19 @@ const HeroSection = async ({ posts }) => {
                 catSlug={posts && posts[2]?.catSlug}
               />
             </Box>
+            <Box className="col-md-12">
+              <PostCard
+                imageUrl={posts && posts[2]?.img}
+                title={posts && posts[2]?.title}
+                creator={posts && posts[2]?.author}
+                date={posts && posts[2]?.createdAt.substring(0, 10)}
+                // comments={posts && posts[2]?.comments?.length}
+                category={posts && posts[2]?.catSlug}
+                slug={posts && posts[2]?.slug}
+                views={posts && posts[2]?.views}
+                catSlug={posts && posts[2]?.catSlug}
+              />
+            </Box>
           </Box>
         </Box>
       </Box>
