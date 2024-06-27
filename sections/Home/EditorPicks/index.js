@@ -1,8 +1,8 @@
-import Heading from '@/components/Heading';
-import Para from '@/components/Para';
-import PostCard from '@/components/PostCard';
-import { Box } from '@/style';
-import React from 'react';
+import Heading from "@/components/Heading";
+import Para from "@/components/Para";
+import PostCard from "@/components/PostCard";
+import { Box } from "@/style";
+import React from "react";
 
 // const getData = async () => {
 //   const res = await fetch(`${process.env.NEXTAUTH_URL}/api/posts/picks`, {
@@ -21,6 +21,17 @@ const EditorPicks = async ({ posts }) => {
   return (
     <>
       <Box className="col-12">
+        <Heading title="Editor's pick">
+          Discover the most outstanding articles in all topics of life.
+        </Heading>
+        <Heading title="Editor's pick">
+          Discover the most outstanding articles in all topics of life.
+        </Heading>
+      </Box>
+      <Box className="col-12">
+        <Heading title="Editor's pick">
+          Discover the most outstanding articles in all topics of life.
+        </Heading>
         <Heading title="Editor's pick">
           Discover the most outstanding articles in all topics of life.
         </Heading>
