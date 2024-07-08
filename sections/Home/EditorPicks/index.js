@@ -28,14 +28,6 @@ const EditorPicks = async ({ posts }) => {
           Discover the most outstanding articles in all topics of life.
         </Heading>
       </Box>
-      <Box className="col-12">
-        <Heading title="Editor's pick">
-          Discover the most outstanding articles in all topics of life.
-        </Heading>
-        <Heading title="Editor's pick">
-          Discover the most outstanding articles in all topics of life.
-        </Heading>
-      </Box>
       {posts?.length > 0 &&
         posts?.map((post) => (
           <Box className="col-md-4" key={post.id}>
