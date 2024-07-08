@@ -24,9 +24,6 @@ const EditorPicks = async ({ posts }) => {
         <Heading title="Editor's pick">
           Discover the most outstanding articles in all topics of life.
         </Heading>
-        <Heading title="Editor's pick">
-          Discover the most outstanding articles in all topics of life.
-        </Heading>
       </Box>
       {posts?.length > 0 &&
         posts?.map((post) => (
