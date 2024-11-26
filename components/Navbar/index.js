@@ -69,7 +69,7 @@ function Header() {
             href="/"
             onClick={() => setIsOpen(false)}
           >
-            Khushlim
+            primly
             <Divider />
           </Link>
           <button

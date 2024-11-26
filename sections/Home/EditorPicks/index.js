@@ -11,10 +11,6 @@ const getData = async () => {
 
   if (!res.ok) {
     console.log("error");
-    console.log("error");
-    console.log("error");
-    console.log("error");
-    console.log("error");
   }
 
   return res.json();
@@ -36,7 +32,7 @@ const EditorPicks = async ({ posts }) => {
               font="md"
               size="full"
               title={post.title}
-              imageUrl={post.img}
+              imageUrl={post?.img}
               date={post?.createdAt?.substring(0, 10)}
               slug={post?.slug}
             />

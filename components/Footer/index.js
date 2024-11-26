@@ -18,7 +18,7 @@ const Footer = () => {
       <Box className="row gap-4">
         <Box className="col-md-3">
           <Link className="navbar-brand text-uppercase" href="/">
-            Khushlim
+            primly
           </Link>
           <Divider className="mb-3" />
           <Para>

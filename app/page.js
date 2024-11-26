@@ -15,7 +15,7 @@ export default function Home() {
             Unforgettable <br /> Adventures await. <br /> Book your Journey{" "}
             <br /> Today.
           </h1>
-          <p>Discover Pakistan with Khushlim</p>
+          <p>Discover Pakistan with primly</p>
         </div>
         <div className="right-content">
           <Slider />

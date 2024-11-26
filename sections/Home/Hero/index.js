@@ -11,7 +11,7 @@ const HeroSection = async ({ posts }) => {
       >
         <Box className="col-md-4">
           <Box className="row gap-4 h-100">
-            {posts.map(
+            {posts?.map(
               ({ img, title, author, createdAt, catSlug, slug, views }) => {
                 return (
                   <Box className="col-md-12">
