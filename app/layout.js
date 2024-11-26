@@ -11,13 +11,13 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://primly.vercel.app/"),
+  metadataBase: new URL("https://travelwithKhushlim.vercel.app/"),
   title: {
-    default: "Travel with primly",
+    default: "Travel with travelwithKhushlim",
     template: `%s - Travel - Your travel Guide`,
   },
   description:
-    "Explore mighty Mountains of Pakistan with primly Khan. With over 30 years of experience in the industry, Travel with primly takes you on an Epic journey through mesmesrising Places Pakistan has to offer. Join us on this Epic Tour with the best guide in the industry.",
+    "Explore mighty Mountains of Pakistan with travelwithKhushlim Khan. With over 30 years of experience in the industry, Travel with travelwithKhushlim takes you on an Epic journey through mesmesrising Places Pakistan has to offer. Join us on this Epic Tour with the best guide in the industry.",
   applicationName: "Infomative",
   keywords: [
     "hunza",
@@ -44,9 +44,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Travel with primly",
+    title: "Travel with travelwithKhushlim",
     description:
-      "Explore mighty Mountains of Pakistan with primly Khan. With over 30 years of experience in the industry, Travel with primly takes you on an Epic journey through mesmesrising Places Pakistan has to offer. Join us on this Epic Tour with the best guide in the industry.",
+      "Explore mighty Mountains of Pakistan with travelwithKhushlim Khan. With over 30 years of experience in the industry, Travel with travelwithKhushlim takes you on an Epic journey through mesmesrising Places Pakistan has to offer. Join us on this Epic Tour with the best guide in the industry.",
   },
 };
 
